@@ -918,7 +918,6 @@ $(function(){
 			case 'gplus': arr.push('<a id="sb-gp" href="https://plus.google.com/share?url='+refURL+'" target="_blank" alt="Share on Google+" title="Share on Google+"><span>google+</span></a>'); break;
 		}
 	}
-	$('body').append('<div id="share-wrap" class="align-'+shareInfo.align+'">\r'+arr.reverse().join('\r')+'\r</div>');
 	$('#share-wrap > a').on('click',function(e){
 		var snet=$(this).text();
 		if(useTracker && trackButtons && _gtag){ _gtag('event','social share',{'event_category':'social share','event_label':snet+' share: '+href,
